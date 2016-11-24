@@ -1,0 +1,99 @@
+body, html{
+	margin: 0;
+	padding: 0;
+	background: #f4f2f2
+}
+.container{
+	max-width: 1200px;
+}
+.hidden_elem{
+	display: none;
+}
+#logged{
+	color: #ecede9;
+	font-weight: 600
+}
+.comments{
+	background: #fff;
+	border:1px solid #cacaca;
+	border-radius: 6px;
+	margin-bottom: 20px;
+	padding: 10px;
+}
+.comments span{
+	font-weight: 600;
+	font-style: italic;
+}
+.rev_create{
+	display: none;
+	padding: 50px 20px 20px 20px;
+}
+.active{
+	display: block;
+}
+.form-control{
+	margin-bottom: 10px;
+}
+.content p{
+	padding: 10px;
+	border-radius: 7px;
+	background: #fff;
+}
+
+/*Звездочки */
+.rating {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+  text-align: left;
+  display: inline-block;
+}
+
+.rating > .star {
+  display: inline-block;
+  position: relative;
+  width: 25px;
+  height: 25px;
+  background: url(../images/stars.png);
+  background-size: cover;
+  background-position: 0 0;
+  cursor: pointer;
+}
+.rev_create .rating > .star:hover,
+.rev_create .rating > .star:hover ~ .star {
+	background-position: 0 25px;
+  }
+
+.star_set{
+	background-position: 0 25px !important;
+}
+.star_set_count /*для подсчетка*/
+{
+	background-position: 0 25px !important;
+}
+/*конец Звездочки */
+
+  .navbar-inverse .navbar-nav>li>a{
+  	font-size: 2em;
+  	   line-height: 34px;
+  }
+
+
+.content .rating{
+	margin-top: 20px;
+}
+.product_content .rating{
+	position: absolute;
+	right: 0;
+	top: 20px;
+}
+.product_content .rating > .star {
+	display: block;
+	float: left;
+}
+.total{
+	font-size: 17px;
+    display: inline-block;
+    margin: 3px;
+    line-height: 25px;
+    color: #a8a8a8;
+}
